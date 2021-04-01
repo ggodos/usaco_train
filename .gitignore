@@ -1,8 +1,6 @@
-
 # Compiled source #
 ###################
 *.exe
-*.out
 *.o
 
 # Packages #
@@ -16,6 +14,6 @@
 /.vs
 /.vscode
 
-
-
-
+# Other #
+#########
+**/tempCodeRunnerFile.c
