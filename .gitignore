@@ -1,7 +1,21 @@
 
-/.vs
-/.vscode
+# Compiled source #
+###################
 *.exe
 *.out
+*.o
+
+# Packages #
+############
+*.7z
 *.zip
+*.rar
+
+# Folders #
+###########
+/.vs
+/.vscode
+
+
+
 
