@@ -4,14 +4,14 @@
 ***
 #### This repository consist solutions for:
 
-[Codeforces][codeforces]
+[Codeforces][codeforces]  
 [Usaco Train][usaco]
 
 ***
 
 #### My profiles:
 
-Codeforces handle: [maxim_belyakov][codeforcesprof]
+Codeforces handle: [maxim_belyakov][codeforcesprof]  
 Usaco ID: deadly51
 
 
