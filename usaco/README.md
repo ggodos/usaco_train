@@ -41,17 +41,19 @@
 | Ski Course Design | ✅     |
 ***
 
-### Section 1.5 (1/2) ⏳
+### Section 1.5 (2/2) ✅
 | Task                   | State |
 | ---------------------- | ----- |
 | Arithmetic Progression | ✅     |
-| Mother's Milk          | ⏳     |
+| Mother's Milk          | ✅     |
 ***
 
-### Section 1.6 (?/?) ⏳
-| Task | State |
-| ---- | ----- |
-| ???  | ???   |
+### Section 1.6 (0/3) 🧠
+| Task              | State |
+| ----------------- | ----- |
+| Number Triangles  | 🧠     |
+| Prime Palindromes | ⏳     |
+| SuperPrime Rib    | ⏳     |
 ***
 
 ## Chapter 2

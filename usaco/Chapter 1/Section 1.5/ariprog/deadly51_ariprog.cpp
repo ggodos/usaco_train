@@ -1,7 +1,7 @@
 /*
 ID: deadly51
 PROG: ariprog
-LANG: C++11
+LANG: C++
 */
 #include <fstream>
 #include <iostream>
