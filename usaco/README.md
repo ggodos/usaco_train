@@ -48,11 +48,11 @@
 | Mother's Milk          | ✅     |
 ***
 
-### Section 1.6 (0/3) 🧠
+### Section 1.6 (1/3) 🧠
 | Task              | State |
 | ----------------- | ----- |
-| Number Triangles  | 🧠     |
-| Prime Palindromes | ⏳     |
+| Number Triangles  | ✅     |
+| Prime Palindromes | 🧠     |
 | SuperPrime Rib    | ⏳     |
 ***
 

@@ -14,18 +14,19 @@ int main() {
     ofstream fout("numtri.out");
     int n;
     fin >> n;
-    vector<vector<int>> piramid(n);
+    vector<vector<int>> input(n);
     for (int i = 1; i <= n; i++) {
-        piramid[i-1].resize(i);
+        input[i-1].resize(i);
         for (int j = 0; j < i; j++)
-            fin >> piramid[i-1][j];
+            fin >> input[i-1][j];
     }
-    int res = 0;
-    int min = pow(2, n-1);
-    for (int i = min; i < min*2; i++) {
-        int sum = 0;
+
+    for (int i = n - 2; i >= 0; i--) {
+        for (int j = 0; j <= i; j++) {
+            input[i][j] += max(input[i+1][j], input[i+1][j+1]);
+        }
     }
     
-    fout << res << "\n";
+    fout << input[0][0] << "\n";
     return 0;
 }
