@@ -2,15 +2,15 @@
 
 ***
 
-## Chapter 1
+## Chapter 1 ⏳
 
-### Section 1.1
+### Section 1.1 (0/0) ✅
 | Task    | State |
 | ------- | ----- |
 | Nothing | ✅     |
 ***
 
-### Section 1.2
+### Section 1.2 (4/4) ✅
 | Task                  | State |
 | --------------------- | ----- |
 | Your Ride Is Here     | ✅     |
@@ -19,7 +19,7 @@
 | Broken Necklace       | ✅     |
 ***
 
-### Section 1.3
+### Section 1.3 (5/5) ✅
 | Task                | State |
 | ------------------- | ----- |
 | Milking Cows        | ✅     |
@@ -29,7 +29,7 @@
 | Dual Palindromes    | ✅     |
 ***
 
-### Section 1.4
+### Section 1.4 (6/6) ✅
 
 | Task              | State |
 | ----------------- | ----- |
@@ -41,17 +41,17 @@
 | Ski Course Design | ✅     |
 ***
 
-### Section 1.5
+### Section 1.5 (1/2) ⏳
 | Task                   | State |
 | ---------------------- | ----- |
-| Arithmetic Progression | ⏳     |
-| Mother's Milk          | ❌     |
+| Arithmetic Progression | ✅     |
+| Mother's Milk          | ⏳     |
 ***
 
-### Section 1.6
+### Section 1.6 (?/?) ⏳
 | Task | State |
 | ---- | ----- |
-| -    | -     |
+| ???  | ???   |
 ***
 
 ## Chapter 2
