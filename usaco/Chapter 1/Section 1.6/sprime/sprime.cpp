@@ -29,7 +29,7 @@ int main() {
     sp[0].push_back(5);
     sp[0].push_back(7);
     if (n == 1) {
-        cout << "2\n3\n5\n7\n";
+        fout << "2\n3\n5\n7\n";
         return 0;
     }
     
@@ -43,7 +43,7 @@ int main() {
     }
     if (n == 2) {
         for (auto i : sp[1])
-            cout << i << "\n";
+            fout << i << "\n";
         return 0;
     }
 
@@ -61,7 +61,7 @@ int main() {
         cur++;
     }
     for (auto i : sp[cur-1]) {
-        cout << i << "\n";
+        fout << i << "\n";
     }
 
     return 0;
