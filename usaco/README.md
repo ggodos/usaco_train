@@ -2,14 +2,14 @@
 
 ***
 
-## Chapter 1 Getting Started ✅
+## <span style="color:red">Chapter 1 Getting Started</span> ✅
 
-### Section 1.1 (1/1) ✅
--|-
-| TEXT Introduction     | ✅     |
+### <span style="color:lightgreen">Section 1.1 (1/1)</span> ✅
+| TEXT Introduction | ✅   |
+| ----------------- | --- |
 
 ***
-### Section 1.2 (7/7) ✅
+### <span style="color:lightgreen">Section 1.2 (7/7)</span> ✅
 | Task                       | State |
 | -------------------------- | ----- |
 | TEXT Submitting Solutions  | ✅     |
@@ -21,7 +21,7 @@
 | Broken Necklace            | ✅     |
 ***
 
-### Section 1.3 (6/6) ✅
+### <span style="color:lightgreen">Section 1.3 (6/6)</span> ✅
 | Task                 | State |
 | -------------------- | ----- |
 | TEXT Complete Search | ✅     |
@@ -32,7 +32,7 @@
 | Dual Palindromes     | ✅     |
 ***
 
-### Section 1.4 (8/8) ✅
+### <span style="color:lightgreen">Section 1.4 (8/8)</span> ✅
 
 | Task                   | State |
 | ---------------------- | ----- |
@@ -46,7 +46,7 @@
 | Ski Course Design      | ✅     |
 ***
 
-### Section 1.5 (3/3) ✅
+### <span style="color:lightgreen">Section 1.5 (3/3)</span> ✅
 | Task                        | State |
 | --------------------------- | ----- |
 | TEXT More Search Techniques | ✅     |
@@ -54,7 +54,7 @@
 | Mother's Milk               | ✅     |
 ***
 
-### Section 1.6 (4/4) ✅
+### <span style="color:lightgreen">Section 1.6 (4/4)</span> ✅
 | Task                                | State |
 | ----------------------------------- | ----- |
 | TEXT Introduction to Binary Numbers | ✅     |
@@ -63,8 +63,8 @@
 | SuperPrime Rib                      | ✅     |
 ***
 
-## Chapter 2 Bigger Challenges ⏳
-### Section 2.1 ⏳
+## <span style="color:red">Chapter 2 Bigger Challenges</span> ⏳
+### <span style="color:lightblue">Section 2.1</span> ⏳
 | Task                            | State |
 | ------------------------------- | ----- |
 | TEXT Graph Theory               | ⏳     |
@@ -74,43 +74,43 @@
 | Sorting A Three-Valued Sequence | ⏳     |
 | Healthy Holsteins               | ⏳     |
 | Hamming Codes                   | ⏳     |
-### Section 2.2 ⏳
+### <span style="color:lightblue">Section 2.2</span> ⏳
 | Task | State |
 | ---- | ----- |
 | ???  | ???   |
 
-### Section 2.3 ⏳
+### <span style="color:lightblue">Section 2.3</span> ⏳
 | Task | State |
 | ---- | ----- |
 | ???  | ???   |
-### Section 2.4 ⏳
+### <span style="color:lightblue">Section 2.4</span> ⏳
 | Task | State |
 | ---- | ----- |
 | ???  | ???   |
 
 ***
 
-## Chapter 3 ??? ⏳
-### Section ???
+## <span style="color:red">Chapter 3 ???</span> ⏳
+### <span style="color:lightblue">Section ???</span>
 | Task | State |
 | ---- | ----- |
 | ???  | ???   |
 ***
 
-## Chapter 4 ⏳
-### Section ???
+## <span style="color:red">Chapter 4</span> ⏳
+### <span style="color:lightblue">Section ???</span>
 | Task | State |
 | ---- | ----- |
 | ???  | ???   |
 ***
-## Chapter 5 ⏳
-### Section ???
+## <span style="color:red">Chapter 5</span> ⏳
+### <span style="color:lightblue">Section ???</span>
 | Task | State |
 | ---- | ----- |
 | ???  | ???   |
 ***
-## Chapter 6 ⏳
-### Section ???
+## <span style="color:red">Chapter 6</span> ⏳
+### <span style="color:lightblue">Section ???</span>
 | Task | State |
 | ---- | ----- |
 | ???  | ???   |
