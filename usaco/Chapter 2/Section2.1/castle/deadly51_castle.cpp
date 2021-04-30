@@ -47,28 +47,26 @@ vector<char> getWalls(int number) {
             temp.push_back(i);
         return temp;
     }
-    while (number != 0) {
-        if (number >= 8) {
-            w[0] = true;
-            number -= 8;
-        }
-        if (number >= 4) {
-            w[1] = true;
-            number -= 4;
-        }
-        if (number >= 2) {
-            w[2] = true; 
-            number -= 2;
-        }
-        if (number == 1) {
-            w[3] = true;
-            number--;
-        }
+    if (number >= 8) {
+        w[0] = true;
+        number -= 8;
     }
-    for (int i = 0; i < 4; i++) {
-        if (!w[i])
-            temp.push_back(walls[i]);
+    if (number >= 4) {
+        w[1] = true;
+        number -= 4;
     }
+    if (number >= 2) {
+        w[2] = true; 
+        number -= 2;
+    }
+    if (number == 1) {
+        w[3] = true;
+        number--;
+    }
+    
+    for (int i = 0; i < 4; i++)
+        if (!w[i]) temp.push_back(walls[i]);
+    
     return temp;
 }
 
@@ -141,9 +139,9 @@ int main() {
                             res = sz;
                             stena = make_pair(k, s);
                         } else if (res == sz) {
-                            if (k%M+1 < stena.first%M+1) {
+                            if (k%M < stena.first%M) {
                                 stena = make_pair(k, s);
-                            } else if (k%M+1 == stena.first%M+1) {
+                            } else if (k%M == stena.first%M) {
                                 if (k/M > stena.first/M) {
                                     stena = make_pair(k, s);
                                 }
