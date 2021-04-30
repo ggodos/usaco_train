@@ -7,38 +7,8 @@ LANG: C++
 #include <bits/stdc++.h>
 
 
-//   0    1    2   3    4    5     6
-// ####|####|####|####|####|####|#####
-// #   |   #|#   |   #|#   |    |    # 1
-// ####|   #|####|   #|#   |####|    #
-// ----|----|----|----|----|----|-----
-// ####|#   |####|#  #|#  #|####|#   #
-// #  #|#   |   #|#  #|#  #|#  #|#   # 2
-// #  #|####|   #|####|#  #|####|#   #
-// ----|----|----|----|----|----|-----
-// #   |####|   #|####|#  #|####|#   #
-// #   |    |   #|#  #|#  #|#  #|#   # 3
-// #   |####|####|#  #|####|#  #|#   #
-// ----|----|----|----|----|----|-----
-// #  #|####|####|    |####|   #|#   # 4
-// #  #|#   |    |    |    |   #|#   #
-// ####|####|####|####|####|####|#####
-
-
-// #############################
-// #      ##      ##           # 
-// ####   #####   ##   ####    #
-// #####   #####  ##  ######   #
-// #  ##      ##  ##  ##  ##   # 
-// #  #####   ######  ######   #
-// #   ####   ######  ######   #
-// #          ##  ##  ##  ##   # 
-// #   #########  ######  ##   #
-// #  #########    ####   ##   # 
-// #  ##                  ##   #
-// #############################
-
 using namespace std;
+
 
 const char walls[] {'D', 'R', 'U', 'L'};
 vector<bool> visited;
@@ -102,11 +72,11 @@ vector<char> getWalls(int number) {
     return temp;
 }
 
-inline void printGraph(vector<vector<int>>& g) {
+void printGraph(vector<vector<int>>& g) {
     for (int i = 0; i < (int)g.size(); ++i) {
-        cout << '[' << i + 1 << "] => {";
+        cout << '[' << i << "] => {";
         for (int& j : g[i]) {
-            cout << ' ' << j + 1;
+            cout << ' ' << j;
         }
         cout << " }\n";
     }
@@ -125,7 +95,7 @@ int main() {
         int t;
         fin >> t;
         vector<char> invec = getWalls(t);
-        
+
         for (auto& it : invec) {
             switch (it) {
                 case 'L':
@@ -151,23 +121,39 @@ int main() {
         }
     );
 
-    unsigned int res = 0;
-    pair<unsigned int, unsigned int> stena;
-    for (int i = 0; i < components.size(); i++) {
-        for (auto j : components[i]) {
-            int ver[] = { 
-            ((j-1) % M == M - 1) ? -1 : j-1, 
-            (j+1) % M == 0 ? -1 : j+1, 
-            (j-M) < 0 ? -1 : j-M, 
-            (j+M) > N-1 ? -1 : j+M
-            };
-            for (auto k = components.begin() + i + 1; k != components.end(); k++) {
-                for (auto z : ver) {
-                    if (z != -1 && (find((*k).begin(), (*k).end(), z) != (*k).end())) {
-                        int t = components[i].size() + (*k).size();
-                        if (res <= t) {
-                            res = t;
-                            stena = make_pair(j, z);
+    int res = 0;
+    pair<int, int> stena = make_pair(0, 0);
+    bool flag = false;
+    for (int i = 0; i < (int)components.size() - 1; ++i) {
+        for (int j = i + 1; j < (int)components.size(); ++j) {
+            for (int k : components[i]) {
+                int v[] = {
+                    (k - 1) % M == M - 1 ? -1 : k - 1, //L
+                    (k + 1) % M == 0     ? -1 : k + 1, //R
+                    k < M                ? -1 : k - M, //U
+                    k >= M * (N - 1)     ? -1 : k + M  //D
+                };
+                for (int s : v) {
+                    if (s != -1 && find(components[j].begin(), components[j].end(), s) != components[j].end()) {
+                        int sz = (int)components[i].size() + (int)components[j].size();
+                        
+                        if (res < sz) {
+                            res = sz;
+                            stena = make_pair(k, s);
+                        } else if (res == sz) {
+                            if (k%M+1 < stena.first%M+1) {
+                                stena = make_pair(k, s);
+                            } else if (k%M+1 == stena.first%M+1) {
+                                if (k/M > stena.first/M) {
+                                    stena = make_pair(k, s);
+                                }
+                            }
+                        }
+                        if (stena.first - stena.second == -M) {
+                            int temp;
+                            stena.first = temp;
+                            stena.first = stena.second;
+                            stena.second = temp;
                         }
                     }
                 }
@@ -181,41 +167,15 @@ int main() {
     int tmp = stena.first - stena.second;
     if (tmp == 1) dir = 'W';
     else if (tmp == -1) dir = 'E';
-    else if (tmp == M - 1) dir = 'N';
-    else if (tmp == -M + 1) dir = 'S';
+    else if (tmp == M) dir = 'N';
+    else if (tmp == -M) dir = 'S';
 
-
-    fout << 
-    components.size() << "\n" << 
+    fout << components.size() << "\n" << 
     components[0].size() << "\n" << 
     res << "\n" << 
     out1 << " " << out2 << " " << dir << "\n";
-    
+
     // auto stop = chrono::high_resolution_clock::now();
     // cout << (stop - start).count() * 1e-9 << "\n";
-
-    // for (auto& i : components) {
-    //     for (auto& j : i)
-    //         cout << j << " ";
-    //     cout << "\n";
-    // }
-    // printGraph(g);
     return 0;
 }
-
-
-
-
-
-
-
-
-// 27
-// 55
-// 85
-// 11_11_E
-// ---- your output ---------
-// 27
-// 55
-// 85
-// 8_11_E
